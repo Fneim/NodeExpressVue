@@ -14,5 +14,5 @@ new Vue({
         this.button.txt = "Login"
       }
     }
-  }
+    }
 });

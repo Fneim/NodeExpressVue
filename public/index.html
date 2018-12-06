@@ -22,17 +22,17 @@
           <div class="col-lg-6">
           <div v-if="seen == true" id="login" class="form-group">
             <h2 class="text-secondary">Login</h2>
-            <input type="text" class="form-control mb-1" placeholder="Name" />
-            <input type="password" class="form-control mb-3" placeholder="Password" />
+            <input id="loginUsername" type="text" class="form-control mb-1" placeholder="Username" />
+            <input id="loginPassword" type="password" class="form-control mb-3" placeholder="Password" />
           </div>
           <div v-else id="signup" class="form-group">
             <h2 class="text-secondary">Sign Up</h2>
-            <input type="text" class="form-control mb-1" placeholder="Name" />
-            <input type="email" class="form-control mb-1" placeholder="Email" />
-            <input type="text" class="form-control mb-1" placeholder="Username" />
-            <input type="password" class="form-control mb-3" placeholder="Password" />
+            <input id="name" type="text" class="form-control mb-1" placeholder="Name" />
+            <input id="email" type="email" class="form-control mb-1" placeholder="Email" />
+            <input id="username" type="text" class="form-control mb-1" placeholder="Username" />
+            <input id="password" type="password" class="form-control mb-3" placeholder="Password" />
           </div>
-          <button type="submit" @click="seen = !seen; changeButtonTxt();" class="btn btn-success">
+          <button id="submitButton" type="submit" @click="seen = !seen; changeButtonTxt" class="btn btn-success">
             {{ button.txt }}
           </button>
         </div>
